@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book an Appointment | Lovely Nails Los Banos, CA</title>
+  <meta name="description" content="Book your nail appointment at Lovely Nails in Los Banos, CA. Fill out our form and we'll confirm your slot. Walk-ins also welcome!"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://lovelynaillosbanos.com/contact"/>
+  <style>
+    :root{--pink:#E8195B;--pink-pale:#FFF0F5;--gold:#C9A96E;--dark:#1A1A2E;--txt:#2D2D2D;--txt2:#666;--white:#fff;--bg:#FDF8F9;--border:#F0D9E3;--r:12px;--font:'Inter','Segoe UI',system-ui,sans-serif;}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}html{scroll-behavior:smooth;}body{font-family:var(--font);background:var(--bg);color:var(--txt);font-size:16px;line-height:1.6;}a{color:var(--pink);text-decoration:none;}a:hover{text-decoration:underline;}.container{max-width:1140px;margin:0 auto;padding:0 20px;}
+    header{background:var(--white);border-bottom:1px solid var(--border);position:fixed;top:0;left:0;right:0;z-index:200;box-shadow:0 2px 12px rgba(232,25,91,.06);}body{padding-top:64px;}.header-inner{display:flex;align-items:center;justify-content:space-between;height:64px;}.logo{font-size:1.2rem;font-weight:900;color:var(--pink);}.logo span{color:var(--gold);}.nav{display:flex;gap:4px;}.nav a{font-size:.82rem;font-weight:600;color:var(--txt2);padding:7px 12px;border-radius:99px;transition:all .15s;}.nav a:hover,.nav a.active{background:var(--pink-pale);color:var(--pink);text-decoration:none;}.nav-cta{background:var(--pink)!important;color:#fff!important;}
+    .hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;color:var(--txt);}.mobile-menu{display:none;position:fixed;inset:0;z-index:500;}.mobile-menu.open{display:block;}.mobile-overlay{position:absolute;inset:0;background:rgba(0,0,0,.5);}.mobile-drawer{position:absolute;top:0;right:0;bottom:0;width:260px;background:var(--white);padding:24px;display:flex;flex-direction:column;gap:8px;}.mobile-close{align-self:flex-end;background:none;border:none;font-size:1.5rem;cursor:pointer;color:var(--txt2);margin-bottom:12px;}.mobile-nav-link{display:block;padding:12px 0;font-size:.95rem;font-weight:600;color:var(--txt);border-bottom:1px solid var(--border);}
+    .page-hero{background:linear-gradient(135deg,#3d0021 0%,#E8195B 100%);padding:48px 0;color:#fff;text-align:center;}
+    .page-hero h1{font-size:clamp(1.8rem,3.5vw,2.4rem);font-weight:900;margin-bottom:8px;}
+    .page-hero p{color:rgba(255,255,255,.85);font-size:.95rem;}
+    .section{padding:64px 0;}
+    .contact-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:start;}
+    .form-card{background:var(--white);border:1.5px solid var(--border);border-radius:var(--r);padding:36px;}
+    .form-card h2{font-size:1.3rem;font-weight:800;color:var(--dark);margin-bottom:6px;}
+    .form-card p{color:var(--txt2);font-size:.88rem;margin-bottom:24px;}
+    .form-group{margin-bottom:18px;}
+    .form-group label{display:block;font-size:.82rem;font-weight:700;color:var(--dark);margin-bottom:6px;}
+    .form-group input,.form-group select,.form-group textarea{width:100%;border:1.5px solid var(--border);border-radius:8px;padding:11px 14px;font-size:.9rem;font-family:var(--font);color:var(--txt);background:var(--bg);transition:border-color .15s;outline:none;}
+    .form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--pink);background:var(--white);}
+    .form-group textarea{resize:vertical;min-height:100px;}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+    .submit-btn{width:100%;background:var(--pink);color:#fff;border:none;border-radius:99px;padding:14px;font-size:.95rem;font-weight:800;cursor:pointer;transition:all .2s;margin-top:8px;}
+    .submit-btn:hover{background:#c01449;transform:translateY(-1px);}
+    .info-card{background:var(--white);border:1.5px solid var(--border);border-radius:var(--r);padding:28px;}
+    .info-card h3{font-size:1rem;font-weight:800;color:var(--dark);margin-bottom:16px;}
+    .info-row{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid var(--border);}
+    .info-row:last-child{border-bottom:none;}
+    .info-icon{font-size:1.1rem;flex-shrink:0;}
+    .info-label{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--txt2);margin-bottom:2px;}
+    .info-value{font-size:.88rem;color:var(--txt);}
+    .hours-row{display:flex;justify-content:space-between;font-size:.85rem;padding:5px 0;}
+    .success-msg{display:none;background:#ECFDF5;border:1.5px solid #86EFAC;border-radius:var(--r);padding:20px;text-align:center;color:#166534;margin-top:16px;}
+    .success-msg.show{display:block;}
+    footer{background:#0d0d1a;color:#6868A0;padding:32px 0 20px;}.footer-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;padding-bottom:20px;border-bottom:1px solid rgba(255,255,255,.07);}.footer-links{display:flex;gap:16px;flex-wrap:wrap;}.footer-links a{font-size:.8rem;color:#6868A0;transition:color .15s;}.footer-links a:hover{color:#fff;text-decoration:none;}.footer-bottom{padding-top:16px;font-size:.75rem;text-align:center;color:#484868;}
+    @media(max-width:1024px){.nav{display:none;}.hamburger{display:flex;align-items:center;justify-content:center;}.contact-grid{grid-template-columns:1fr;}.form-row{grid-template-columns:1fr;}}
+    @media(max-width:560px){.container{padding:0 16px;}.form-card{padding:24px;}}body{overflow-x:hidden;}
+  </style>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+  <link rel="apple-touch-icon" href="favicon.svg"/>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="header-inner">
+      <a href="index.html" class="logo">Lovely<span>Nails</span></a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="nail-salon-los-banos.html">Services</a>
+        <a href="best-nail-salon-los-banos.html">About</a>
+        <a href="cheap-nail-salon-los-banos.html">Pricing</a>
+        <a href="nail-salon-fresno.html">Fresno</a>
+        <a href="contact.html" class="nav-cta active">📅 Book Now</a>
+      </nav>
+      <button class="hamburger" onclick="openMenu()" aria-label="Menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu">
+  <div class="mobile-overlay" onclick="closeMenu()"></div>
+  <div class="mobile-drawer">
+    <button class="mobile-close" onclick="closeMenu()">✕</button>
+    <a href="index.html" class="mobile-nav-link" onclick="closeMenu()">🏠 Home</a>
+    <a href="nail-salon-los-banos.html" class="mobile-nav-link" onclick="closeMenu()">💅 Services</a>
+    <a href="best-nail-salon-los-banos.html" class="mobile-nav-link" onclick="closeMenu()">⭐ About Us</a>
+    <a href="cheap-nail-salon-los-banos.html" class="mobile-nav-link" onclick="closeMenu()">💰 Pricing</a>
+    <a href="nail-salon-fresno.html" class="mobile-nav-link" onclick="closeMenu()">📍 Fresno</a>
+    <a href="contact.html" class="mobile-nav-link" style="color:var(--pink);" onclick="closeMenu()">📅 Book Appointment</a>
+  </div>
+</div>
+
+<section class="page-hero">
+  <div class="container">
+    <h1>📅 Book Your Appointment</h1>
+    <p>Fill out the form below and we'll confirm your slot within a few hours. Walk-ins also welcome!</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="form-card">
+        <h2>Request an Appointment</h2>
+        <p>We'll get back to you to confirm your booking. For same-day appointments, walk in directly.</p>
+        <form id="booking-form" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name *</label>
+              <input type="text" id="fname" name="fname" placeholder="Jane" required/>
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name *</label>
+              <input type="text" id="lname" name="lname" placeholder="Doe" required/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="jane@email.com" required/>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="service">Service *</label>
+              <select id="service" name="service" required>
+                <option value="">Select a service...</option>
+                <option>Classic Manicure ($15)</option>
+                <option>Gel Manicure ($35)</option>
+                <option>Acrylic Full Set ($40)</option>
+                <option>Dip Powder ($42)</option>
+                <option>Classic Pedicure ($28)</option>
+                <option>Spa Pedicure ($40)</option>
+                <option>Mani + Pedi Combo</option>
+                <option>Nail Art</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="date">Preferred Date *</label>
+              <input type="date" id="date" name="date" required/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="time">Preferred Time</label>
+            <select id="time" name="time">
+              <option>Morning (9am – 12pm)</option>
+              <option>Afternoon (12pm – 4pm)</option>
+              <option>Evening (4pm – 7pm)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="notes">Additional Notes</label>
+            <textarea id="notes" name="notes" placeholder="Any specific design, allergies, or requests..."></textarea>
+          </div>
+          <button type="submit" class="submit-btn">💅 Request Appointment</button>
+        </form>
+        <div class="success-msg" id="success-msg">
+          <div style="font-size:2rem;margin-bottom:8px;">🎉</div>
+          <strong>Your request has been sent!</strong><br/>
+          We'll confirm your appointment within a few hours. See you soon at Lovely Nails!
+        </div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:20px;">
+        <div class="info-card">
+          <h3>📍 Visit Us</h3>
+          <div class="info-row">
+            <div class="info-icon">🏠</div>
+            <div><div class="info-label">Address</div><div class="info-value">1641 E Pacheco Blvd<br/>Los Banos, CA 93635</div></div>
+          </div>
+          <div class="info-row">
+            <div class="info-icon">🕐</div>
+            <div>
+              <div class="info-label">Hours</div>
+              <div class="hours-row"><span>Mon – Fri</span><span style="font-weight:600;">9 AM – 7 PM</span></div>
+              <div class="hours-row"><span>Saturday</span><span style="font-weight:600;">9 AM – 6 PM</span></div>
+              <div class="hours-row"><span>Sunday</span><span style="font-weight:600;">10 AM – 5 PM</span></div>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="info-icon">🚗</div>
+            <div><div class="info-label">Parking</div><div class="info-value">Free parking in front of salon</div></div>
+          </div>
+          <div class="info-row">
+            <div class="info-icon">🚶</div>
+            <div><div class="info-label">Walk-ins</div><div class="info-value">Always welcome - no appointment needed for most services</div></div>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <h3>💅 Quick Price Guide</h3>
+          <div class="hours-row"><span>Classic Manicure</span><span style="font-weight:700;color:var(--pink);">$15</span></div>
+          <div class="hours-row"><span>Gel Manicure</span><span style="font-weight:700;color:var(--pink);">$35</span></div>
+          <div class="hours-row"><span>Acrylic Full Set</span><span style="font-weight:700;color:var(--pink);">$40</span></div>
+          <div class="hours-row"><span>Classic Pedicure</span><span style="font-weight:700;color:var(--pink);">$28</span></div>
+          <div class="hours-row"><span>Spa Pedicure</span><span style="font-weight:700;color:var(--pink);">$40</span></div>
+          <div style="margin-top:10px;"><a href="cheap-nail-salon-los-banos.html" style="font-size:.83rem;font-weight:600;">See full price list →</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <a href="index.html" class="logo" style="font-size:1rem;">Lovely<span style="color:var(--gold);">Nails</span></a>
+      <nav class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="nail-salon-los-banos.html">Services</a>
+        <a href="best-nail-salon-los-banos.html">About</a>
+        <a href="cheap-nail-salon-los-banos.html">Pricing</a>
+        <a href="nail-salon-fresno.html">Fresno</a>
+        <a href="contact.html">Book</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">© 2026 Lovely Nails Los Banos · 1641 E Pacheco Blvd, Los Banos, CA 93635</div>
+  </div>
+</footer>
+
+<script>
+function openMenu(){document.getElementById('mobile-menu').classList.add('open');document.body.style.overflow='hidden';}
+function closeMenu(){document.getElementById('mobile-menu').classList.remove('open');document.body.style.overflow='';}
+function handleSubmit(e){
+  e.preventDefault();
+  document.getElementById('booking-form').style.display='none';
+  document.getElementById('success-msg').classList.add('show');
+}
+</script>
+</body>
+</html>
